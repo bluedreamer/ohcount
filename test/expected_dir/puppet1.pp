@@ -1,3 +1,5 @@
+puppet	code	include testfile
+puppet	blank	
 puppet	code	class bob::open_ldap {
 puppet	blank	
 puppet	code		define foo::server (
@@ -143,3 +145,5 @@ puppet	blank
 puppet	code		}
 puppet	blank	
 puppet	code	}
+puppet	blank	
+puppet	code	class { 'test::func': config_file => '/tmp/test.rb' }

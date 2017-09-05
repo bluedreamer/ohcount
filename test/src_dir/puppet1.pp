@@ -1,3 +1,5 @@
+include testfile
+
 class bob::open_ldap {
 
 	define foo::server (
@@ -143,3 +145,5 @@ class bob::open_ldap {
 	}
 
 }
+
+class { 'test::func': config_file => '/tmp/test.rb' }
